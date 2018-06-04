@@ -88,6 +88,10 @@ class ofxTextInputField {
     void setClipboard(string clippy);
     string getClipboard();
 	#endif
+    
+    bool    isEditing; // modified
+    bool     isEnabled; // modified
+
 	
   protected:
 	float lastTimeCursorMoved;
@@ -95,8 +99,8 @@ class ofxTextInputField {
 	int HORIZONTAL_PADDING;
 	ofxTextInput::FontRenderer* fontRef;
 	
-    bool 	isEnabled;
-	bool	isEditing;
+//    bool     isEnabled;
+//    bool    isEditing;
 	bool	mouseDownInRect;
 	void    mousePressed(ofMouseEventArgs& args);
     void    mouseDragged(ofMouseEventArgs& args);
